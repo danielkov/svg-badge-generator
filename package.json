@@ -2,6 +2,9 @@
   "name": "svg-badge-generator",
   "version": "0.1.0",
   "description": "Node JS SVG badge generator.",
+  "engines": {
+    "node": "7.3.0"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
