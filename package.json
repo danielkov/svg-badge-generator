@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node --harmony index",
-    "build": "browserify src/entry.js -o build/bundle.js -t [ babelify --presets [ es2015 react ] ]"
+    "build": "node_modules/browserify/.bin/browserify src/entry.js -o build/bundle.js -t [ babelify --presets [ es2015 react ] ]"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/danielkov/svg-badge-generator#readme",
   "dependencies": {
+    "kcors": "^2.2.0",
     "koa": "^2.0.0-alpha.7",
     "koa-router": "^7.0.1",
     "koa-static": "^3.0.0",

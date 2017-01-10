@@ -32774,7 +32774,7 @@ var BadgeApp = function (_React$Component) {
     key: 'handleButtonClick',
     value: function handleButtonClick(e) {
       e.preventDefault();
-      var url = 'http://localhost:3000/badge/' + this.state.first + '/' + this.state.second + '/' + this.rgbaToString(this.state.color);
+      var url = '/badge/' + this.state.first + '/' + this.state.second + '/' + this.rgbaToString(this.state.color);
       window.location = url;
     }
   }, {

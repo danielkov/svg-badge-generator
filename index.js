@@ -2,6 +2,7 @@ const Koa = require('koa');
 
 const router = require('koa-router')();
 const static = require('koa-static');
+const cors = require('kcors');
 
 const app = new Koa();
 
@@ -17,6 +18,8 @@ router
 })
 
 app
+
+.use(cors())
 
 .use(static(`${__dirname}/build`))
 

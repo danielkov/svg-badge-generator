@@ -89,7 +89,7 @@ class BadgeApp extends React.Component {
 
   handleButtonClick (e) {
     e.preventDefault();
-    let url = `http://localhost:3000/badge/${this.state.first}/${this.state.second}/${this.rgbaToString(this.state.color)}`;
+    let url = `/badge/${this.state.first}/${this.state.second}/${this.rgbaToString(this.state.color)}`;
     window.location = url;
   }
 
