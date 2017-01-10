@@ -1,0 +1,43 @@
+{
+  "name": "svg-badge-generator",
+  "version": "0.1.0",
+  "description": "Node JS SVG badge generator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node --harmony index",
+    "build": "browserify src/entry.js -o build/bundle.js -t [ babelify --presets [ es2015 react ] ]"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielkov/svg-badge-generator.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "javascript",
+    "svg",
+    "badge",
+    "generator"
+  ],
+  "author": "Daniel Kovacs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielkov/svg-badge-generator/issues"
+  },
+  "homepage": "https://github.com/danielkov/svg-badge-generator#readme",
+  "dependencies": {
+    "koa": "^2.0.0-alpha.7",
+    "koa-router": "^7.0.1",
+    "koa-static": "^3.0.0",
+    "react": "^15.4.2",
+    "react-color": "^2.11.1",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.3.0"
+  }
+}
