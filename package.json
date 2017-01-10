@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node --harmony index",
-    "build": "node_modules/.bin/browserify src/entry.js -o build/bundle.js -t [ babelify --presets [ es2015 react ] ]"
+    "build": "browserify src/entry.js -o build/bundle.js -t [ babelify --presets [ es2015 react ] ]"
   },
   "repository": {
     "type": "git",
